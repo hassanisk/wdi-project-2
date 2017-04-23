@@ -1,0 +1,8 @@
+<h1><%= movie.name %></h1>
+<a href="/movies/<%= movie._id %>/edit">Edit</a>
+<img src="<%= movie.image %>" alt="<%= movie.name %>'s image">
+<p><%= movie.description %></p>
+<form method="post" action="/movies/<%= movie.id %>">
+  <input type="hidden" name="_method" value="delete">
+  <input type="submit" value="Delete">
+</form>
