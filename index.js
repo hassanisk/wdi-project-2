@@ -2,8 +2,9 @@ const express         = require('express');
 const expressLayouts  = require('express-ejs-layouts');
 const bodyParser      = require('body-parser');
 const mongoose        = require('mongoose');
+const session         = require('express-session');
 const methodOverride  = require('method-override');
-const morgan  = require('morgan');
+const morgan           = require('morgan');
 const env             = require('./config/env');
 const router          = require('./config/routes');
 const app             = express();
@@ -22,6 +23,16 @@ app.use(methodOverride((req) => {
     return method;
   }
 }));
+app.use(session({
+  secret: process.env.SESSION_SECRET || 'ssh it\'s a secret',
+  resave: false,
+  saveUninitialized: false
+}));
+
+app.use((req, res, next) => {
+  if (!req.session.userId) return next();
+});
+
 
 app.use(morgan('dev'));
 app.use(expressLayouts);
