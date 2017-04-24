@@ -6,14 +6,26 @@ function sessionsNew(req, res) {
 
 function sessionsCreate(req, res) {
   User
-  .create(req.body)
-  .then(user => {
-    res.redirect('/');
-  })
-  .catch((err) => res.status(500).end());
+    .findOne({ email: req.body.email })
+    .then((user) => {
+      if(!user || !user.validatePassword(req.body.password)) {
+        req.flash('danger', 'Unknown email/password combination');
+        return res.status(401).render('sessions/new', { message: 'Unrecognised credentials' });
+      }
+
+      req.session.userId = user.id;
+
+      req.flash('info', `Welcome back, ${user.username}!`);
+      return res.redirect('/');
+    });
+}
+
+function sessionsDelete(req, res) {
+  return req.session.regenerate(() => res.redirect('/'));
 }
 
 module.exports = {
   new: sessionsNew,
-  create: sessionsCreate
+  create: sessionsCreate,
+  delete: sessionsDelete
 };
