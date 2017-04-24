@@ -25,7 +25,7 @@ router.route('/movies/new')
 .get(secureRoute, movies.new);
 
 router.route('/movies/:id')
-.get(movies.show)
+.get(secureRoute, movies.show)
 .put(secureRoute, movies.update)
 .delete(secureRoute, movies.delete);
 
