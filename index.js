@@ -5,6 +5,7 @@ const mongoose        = require('mongoose');
 const session         = require('express-session');
 const methodOverride  = require('method-override');
 const morgan           = require('morgan');
+// const User           = require('./models/user');
 const env             = require('./config/env');
 const router          = require('./config/routes');
 const app             = express();
@@ -29,9 +30,24 @@ app.use(session({
   saveUninitialized: false
 }));
 
-app.use((req, res, next) => {
-  if (!req.session.userId) return next();
-});
+// app.use((req, res, next) => {
+//   if (!req.session.userId) return next();
+//
+//   User
+//   .findById(req.session.userId)
+//   .exec()
+//   .then((user) => {
+//     if(!user) {
+//       return req.session.regenerate(() => {
+//         res.redirect('/');
+//       });
+//     }
+//     req.session.userId = user._id;
+//     res.locals.user = user;
+//     res.locals.isLoggedIn = true;
+//     next();
+//   });
+// });
 
 
 app.use(morgan('dev'));

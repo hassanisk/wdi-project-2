@@ -1,6 +1,7 @@
 const express = require('express');
 const router  = express.Router();
-
+// const sessions      = require('../controllers/sessions');
+const registrations = require('../controllers/registrations');
 const movies = require('../controllers/movies');
 
 
@@ -16,6 +17,9 @@ router.route('/movies/:id/edit')
 .get(movies.edit);
 router.route('/movies/:id')
 .delete(movies.delete);
+router.route('/register')
+.get(registrations.new)
+.post(registrations.create);
 
 
 

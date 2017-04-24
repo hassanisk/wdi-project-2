@@ -5,7 +5,7 @@ function moviesIndex(req, res) {
     .find()
     .exec()
     .then(movies => {
-      return res.render('movies', { movies });
+      return res.render('movies/movies', { movies });
     })
     .catch(err => {
       return res.render('error', { error: err });
