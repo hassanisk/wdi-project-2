@@ -1,13 +1,15 @@
-<nav>
-   <div class="navbar navbar-default">
-     <div class="container">
-       <a class="navbar-brand" href="/movies/">Movies</a>
-       <a class="navbar-brand" href="">Movie Info</a>
+<nav class= "navbar navbar-default">
+   <div class="container">
+      <div class="navbar-header">
+     <a class="navbar-brand" href="/">Home</a>
   <% if (locals.isLoggedIn) { %>
+    <a class="navbar-brand" href="/movies/">My Movies</a>
     <a class="navbar-brand" href="/movies/new">Add Movie</a>
     <a class="navbar-brand" href="/logout">Logout</a>
     <% } else { %>
       <a class="navbar-brand" href="/login">Log In</a>
         <a class="navbar-brand" href="/register">Register</a>
     <% } %>
+  </div>
+</div>
 </nav>

@@ -7,6 +7,14 @@ function staticsIndex(req, res) {
     .then((users) => res.render('statics/index', { users }));
 }
 
+function staticsmMovie(req, res) {
+  User
+    .find()
+    .exec()
+    .then((users) => res.render('statics/movie', { users }));
+}
+
 module.exports = {
-  index: staticsIndex
+  index: staticsIndex,
+  movie: staticsmMovie
 };

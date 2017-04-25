@@ -3,13 +3,16 @@ body {
   background: black;
 }
 
-img{
-  width: 100px;
-  height: 100px;
+#movies img, #movie img{
+  width: 100%;
 }
-h1, h2, img{
-  text-align: center;
-}
-.home-movie{
-text-align: center;
+
+
+@media (min-width: 500px) {
+  #movies .col-md-3 .well{
+    height: 390px;
+  }
+  #movies .col-md-3 img{
+    height: 240px;
+  }
 }
