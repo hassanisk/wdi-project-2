@@ -19,7 +19,7 @@ function secureRoute(req, res, next) {
 router.route('/')
 .get(statics.index);
 router.route('/movie')
-.get(statics.movie);
+.get(secureRoute, statics.movie);
 
 router.route('/movies')
 .get(movies.index)
