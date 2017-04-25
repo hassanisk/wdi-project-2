@@ -1,20 +1,15 @@
 <!DOCTYPE html>
 <html>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="utf-8">
   <title>WDI Project 2</title>
-  <link rel="stylesheet" href="/css/main.css">
-  <script
-  src="https://code.jquery.com/jquery-3.2.1.min.js"
-  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-  crossorigin="anonymous"></script>
-  <script src="/js/client.js" charset="utf-8"></script>
   <% include ./partials/stylesheets %>
   </head>
   <body>
   <% include ./partials/navbar %>
-  <main class="container">
+  <main>
     <%- body %>
   </main>
   <% include ./partials/scripts %>
