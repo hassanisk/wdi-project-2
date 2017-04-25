@@ -14,7 +14,14 @@ function staticsmMovie(req, res) {
     .then((users) => res.render('statics/movie', { users }));
 }
 
+function staticsSearch(req, res) {
+  User
+    .find()
+    .exec()
+    .then((users) => res.render('statics/search', { users }));
+}
 module.exports = {
   index: staticsIndex,
-  movie: staticsmMovie
+  movie: staticsmMovie,
+  search: staticsSearch
 };

@@ -14,9 +14,10 @@ function sessionsCreate(req, res) {
       }
 
       req.session.userId = user.id;
+      req.session.user   = user;
 
       req.flash('info', `Welcome back, ${user.username}!`);
-      return res.redirect('/') ;
+      return res.redirect('/search') ;
     });
 }
 
