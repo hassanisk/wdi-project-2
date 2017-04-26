@@ -1,92 +1,85 @@
-#logo {
-  height: 1.8em;
-  width: 2em;
+body {
+  font-family: sans-serif;
+  background: black;
 }
-.logo{
-  padding: 0;
-  margin: 0;
-  background-size:cover;
+
+h1{
+  text-align: center;
 }
+//
+// #logo {
+//   height: 1.8em;
+//   width: 2em;
+// }
+//
+// .logo{
+//   padding: 0;
+//   margin: 0;
+//   background-size:cover;
+// }
+
 textarea {
   resize: vertical;
   max-height: 100px;
-  min-height: 50px
-  maxlength: 500;
+  min-height: 50px;
 }
 
-  label{
-    color: #42b9f4;
+label{
+  color: #42b9f4;
+}
+.form-horizontal{
+  text-align: center;
+  width: 200px;
+  left: 50%;
+}
+
+.form {
+  margin: auto;
+  width: 50%;
+}
+
+.button{
+  text-align: center;
+}
+
+.homePage{
+  text-align: center;
+}
+
+#homePageWrapper{
+  text-align: center;
+  display: inline-block;
+  width: 670px;
+  margin: 0;
+}
+
+
+.gif{
+  display: inline-block;
+}
+
+.homePageImg{
+  margin: 0;
+  width: 200px;
+  height: 200px;
+}
+
+
+#movies img, #movie img{
+  width: 100%;
+}
+
+@media(min-width: 700px) {
+
+  #movies .col-md-3 .well{
+    height: 400px;
   }
-  body {
-    font-family: sans-serif;
-    background: black;
+  #movies .col-md-3 img{
+    height: 240px;
   }
+}
 
 
-  #movies img, #movie img{
-    width: 100%;
-  }
-  // // #bs-example-navbar-collapse-1{
-  // //   position: relative;
-  // // }
-  //
-  h1{
-    text-align: center;
-  }
-  #wrapper{
-    display: inline-block;
-    width: 670px;
-    margin: 0
-  }
-  .basic{
-    text-align: center;
-  }
-  .gif{
-    display: inline-block;}
-    .front{
-      margin: 0;
-      width: 200px;
-      height: 200px;
-    }
+@media (max-width: 200px) {
 
-    .form-horizontal{
-      text-align: center;
-      width: 200px;
-      left: 50%;
-    }
-    .form {
-      margin: auto;
-      width: 50%;
-    }
-    .button{
-      text-align: center;
-    }
-
-    @media (max-width: 960px) {
-      #movies .col-md-3 .well{
-        height: 390px;
-        width: 200px;
-      }
-      #movies .col-md-3 img{
-        height: 240px;
-        width: 100px;
-      }
-
-    }
-
-    @media (max-width: 600px) {
-      h1{
-        font-size: 20px;
-      }
-      .gif{
-        display: block;
-
-      }
-      .front{
-        width: 230px;
-      }
-
-      .basic{
-        text-align: inherit;
-      }
-    }
+}
