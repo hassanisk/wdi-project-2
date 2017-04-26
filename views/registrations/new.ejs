@@ -1,9 +1,8 @@
-<h1>Register</h1>
-
 <% if (locals.message) { %>
   <p><%= message %></p>
 <% } %>
-
+<div class="container">
+  <div class="jumbotron">
 <form method="POST" action="/register" class="form">
   <div class="form-group">
     <label for="username">Username</label>
@@ -25,3 +24,5 @@
   <button class="btn btn-primary">Register</button>
 </div>
 </form>
+</div>
+</div>

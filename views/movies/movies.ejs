@@ -1,6 +1,8 @@
 <h1>Movies</h1>
 <ul>
   <% movies.forEach(movie => { %>
+    <ul class="">
     <li><a href="/movies/<%= movie._id %>"><%= movie.name %></a></li>
+    </ul>
   <% }); %>
 </ul>

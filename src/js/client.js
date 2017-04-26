@@ -16,7 +16,7 @@ function getMovies(searchText) {
     $.each(movies, (index, movie) =>{
       output += `
       <div class="col-md-3">
-      <div class="well text-center">
+      <div class="well text-center" >
       <img src="${movie.Poster}">
       <h5>${movie.Title}</h5>
       <a onclick="movieSelected('${movie.imdbID}')" class="btn btn-primary" href="#">Movie Details</a>
@@ -50,15 +50,15 @@ function getMovie(){
     <img src="${movie.Poster}" class="thumbnail">
     </div>
     <div class="col-md-8"
-    <h2>${movie.Title}</h2>
     <ul class="list-group">
-    <li class="list-group-item"><strong>Genre:</strong>${movie.Genre}</li>
-    <li class="list-group-item"><strong>Released:</strong>${movie.Released}</li>
-    <li class="list-group-item"><strong>Rated:</strong>${movie.Rated}</li>
-    <li class="list-group-item"><strong>IMDB Rating:</strong>${movie.imdbRating}</li>
-    <li class="list-group-item"><strong>Director:</strong>${movie.Director}</li>
-    <li class="list-group-item"><strong>Writer:</strong>${movie.Writer}</li>
-    <li class="list-group-item"><strong>Actors:</strong>${movie.Actors}</li>
+    <h2>${movie.Title}</h2>
+    <li class="list-group-item"><strong>Genre: </strong><span class="text-warning">${movie.Genre}</span></li>
+    <li class="list-group-item"><strong>Released: </strong><span class="text-warning">${movie.Released}</span></li>
+    <li class="list-group-item"><strong>Rated: </strong><span class="text-warning">${movie.Rated}</span></li>
+    <li class="list-group-item"><strong>IMDB Rating: </strong><span class="text-warning">${movie.imdbRating}</span></li>
+    <li class="list-group-item"><strong>Director: </strong><span class="text-warning">${movie.Director}</span></li>
+    <li class="list-group-item"><strong>Writer: </strong><span class="text-warning">${movie.Writer}</span></li>
+    <li class="list-group-item"><strong>Actors: </strong><span class="text-warning">${movie.Actors}</span></li>
 
     </ul>
     </div>
@@ -66,7 +66,9 @@ function getMovie(){
     <div class="row">
     <div class="well">
     <h3>Plot</h3>
+    <span class="text-warning">
     ${movie.Plot}
+    </span>
     <hr>
     <a href="http://imdb.com/title/${movie.imdbID}" target="_blank" class="btn btn-primary">View IMDB</a>
     <a href="/" class="btn btn-default">Go Back To Search</a>
@@ -78,3 +80,8 @@ function getMovie(){
     console.log(err);
   });
 }
+$('#logo').hover(function(){
+  $(this).wiggle('start');
+},function(){
+  $(this).wiggle('stop');
+});
