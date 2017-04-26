@@ -6,17 +6,7 @@ body {
 h1{
   text-align: center;
 }
-//
-// #logo {
-//   height: 1.8em;
-//   width: 2em;
-// }
-//
-// .logo{
-//   padding: 0;
-//   margin: 0;
-//   background-size:cover;
-// }
+
 
 textarea {
   resize: vertical;
@@ -64,8 +54,11 @@ label{
   height: 200px;
 }
 
+#na{
+  border: 2px solid black;
+}
 
-#movies img, #movie img{
+#movies img, #movie img, #moviess img{
   width: 100%;
 }
 

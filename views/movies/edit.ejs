@@ -1,22 +1,38 @@
-<h1>Edit Movie</h1>
+<div class="container">
+  <div class="jumbotron">
+    <div class="basic">
+      <form method="post" class="form" action="/movies/<%= movie._id %>">
+        <input type="hidden" name="_method" value="put">
 
-<form method="post" action="/movies/<%= movie._id %>">
-  <input type="hidden" name="_method" value="put">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" class="form-control" id="name" name="name" value="<%= movie.name %>">
+        </div>
 
-  <label for="name">Name</label>
-  <input type="text" id="name" name="name" value="<%= movie.name %>">
+        <div class="form-group">
+          <label for="image">Image</label>
+          <input type="text" id="image" name="image" value="<%= movie.image %>" class="form-control">
+        </div>
 
-  <label for="description">Description</label>
-  <textarea id="description" name="description"><%= movie.description %></textarea>
+        <div class="form-group">
+          <label for="genre">Genre</label>
+          <input type="text" id="genre" name="genre" value="<%= movie.genre %>" class="form-control">
+        </div>
 
-  <label for="image">Image</label>
-  <input type="text" id="image" name="image" value="<%= movie.image %>">
+        <div class="form-group">
+          <label for="year">Year</label>
+          <input type="text" id="year" name="year" value="<%= movie.year %>" class="form-control">
+        </div>
 
-  <label for="genre">Genre</label>
-  <input type="text" id="genre" name="genre" value="<%= movie.genre %>">
+        <div class="form-group">
+          <label for="description">Description</label>
+          <textarea id="description" name="description" class="form-control"><%= movie.description %></textarea>
+        </div>
 
-  <label for="year">Year</label>
-  <input type="text" id="year" name="year" value="<%= movie.year %>">
-
-  <input type="submit" value="Submit">
-</form>
+        <div class="button">
+          <input type="submit" value="Submit" class="btn btn-primary">
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
