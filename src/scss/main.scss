@@ -8,7 +8,13 @@ body {
 h1{
   text-align: center;
 }
-
+#logo{
+  height :50px;
+  margin: -15px auto;
+}
+.logo{
+  font-size: 50px;
+}
 .fontSquare{
   font-family: 'Electrolize', sans-serif;
 }
@@ -32,8 +38,14 @@ h4{
   color: grey;
   font-style: italic;
 }
+.movieLink{
+  // text-align: right;
+  text-decoration: none;
+  font-size: 30px;
+}
 .showImg{
-  width: 400px;
+width: 400px;
+height: 600px;
 }
 label{
   font-size: 20px;

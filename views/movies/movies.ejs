@@ -1,13 +1,16 @@
 <h1 class="fontItalic underline">Welcome to MoviePedia</h1>
 <h4 class="fontSquare">Movies recommended by our users</h4>
-
+<div class="addButton">
 <a href="/movies/new" class="btn btn-primary btn-lg addButton">Add</a>
+</div>
 <div class="center">
   <% movies.forEach(movie => { %>
-    <div>
-      <a href="/movies/<%= movie._id %>" class="addButton">
+
+    <div class="movieShow">
+      <a  class="movieLink" href="/movies/<%= movie._id %>" >
         <%= movie.name %>
       </a>
+
       <a href="/movies/<%= movie._id %>"> <img class="showImg" src="<%= movie.image %>"> </a>
     </div>
     <% }); %>
