@@ -1,16 +1,20 @@
 <h1>Movies</h1>
-
+<a href="/movies/new" class="btn btn-primary btn-lg">Add</a>
 <% movies.forEach(movie => { %>
   <div class="multiple-items">
-   <div>
+  <ul>
+   <li><div>
     <a href="/movies/<%= movie._id %>">
      <%= movie.name %>
    </a>
-  </div>
-    <div>
+  </div></li>
+
+    <li><div>
       <a href="/movies/<%= movie._id %>">
        <img src="<%= movie.image %>">
        </a>
     </div>
+    </li>
+    </ul>
   </div>
   <% }); %>

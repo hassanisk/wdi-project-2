@@ -7,10 +7,7 @@
       <div class="col-md-8"
       <ul class="list-group">
         <h2><%= movie.name %></h2>
-        <li class="list-group-item"><strong>Genre: </strong><span class="text-warning"><%= movie.genre %></span></li>
-        <li class="list-group-item"><strong>Genre: </strong><span class="text-warning"><%= movie.genre %></span></li>
-        <li class="list-group-item"><strong>Genre: </strong><span class="text-warning"><%= movie.genre %></span></li>
-
+<span><iframe width="700" height="463" src="https://www.youtube.com/embed/<%= movie.youtubeid %>" frameborder="0" allowfullscreen></iframe></span>
       </ul>
     </div>
   </div>
@@ -20,8 +17,8 @@
       <span class="text-warning"><%= movie.description %>
       </span>
       <hr>
-      <a href="http://imdb.com/title/${movie.imdbID}" target="_blank" class="btn btn-primary">View IMDB</a>
-      <a href="/movies" class="btn btn-default">Go Back To Search</a>
+      <a href="/movies" class="btn btn-default">Go Back To Moviepedia</a>
+    <a href="/movies/<%= movie.id %>/edit" class="btn btn-primary">Edit</a>
     </div>
   </div>
 </div>

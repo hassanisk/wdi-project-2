@@ -16,6 +16,7 @@ Movie
       description: 'Sebastian (Ryan Gosling) and Mia (Emma Stone) are drawn together by their common desire to do what they love. But as success mounts they are faced with decisions that begin to fray the fragile fabric of their love affair, and the dreams they worked so hard to maintain in each other threaten to rip them apart.',
       image: 'http://t2.gstatic.com/images?q=tbn:ANd9GcRhFtgdSYQ89vUMjMJal2D8H39qBCkh9ptCEoZEsafOzkeQPTu2',
       genre: ' Comedy | Drama | Music | Musical | Romance',
+      youtubeid: '0pdqf4P9MB8',
       year: '2016'
     },
     {
