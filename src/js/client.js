@@ -1,5 +1,29 @@
 $(document).ready(() => {
-  $('.single-item').slick();
+  $('.center').slick({
+    centerMode: true,
+    centerPadding: '60px',
+    slidesToShow: 3,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          centerPadding: '40px',
+          slidesToShow: 3
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          centerPadding: '40px',
+          slidesToShow: 1
+        }
+      }
+    ]
+  });
   $('#searchForm').on('submit', (e) => {
     const searchText = $('#searchText').val();
     getMovies(searchText);
@@ -66,7 +90,7 @@ function getMovie(){
     </div>
     <div class="row">
     <div class="well">
-    <h3 class="fontTitle fontItalic">Plot</h3>
+    <h3 class="fontItalic">Plot</h3>
     <span class="text-warning ">
     ${movie.Plot}
     </span>

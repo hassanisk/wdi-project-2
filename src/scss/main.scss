@@ -25,14 +25,16 @@ textarea {
   max-height: 100px;
   min-height: 50px;
 }
-h3{
+h4{
   font-size: 20px;
   font-weight: lighter;
   text-align: center;
   color: grey;
   font-style: italic;
 }
-
+.showImg{
+  width: 400px;
+}
 label{
   font-size: 20px;
   color: #42b9f4;
@@ -54,10 +56,6 @@ label{
   text-align: center;
 }
 
-.homePage{
-  text-align: center;
-}
-
 #homePageWrapper{
   text-align: center;
   display: inline-block;
@@ -65,21 +63,55 @@ label{
   margin: 0;
 }
 
-
 .gif{
-  display: inline-block;
+  display: inline-block ;
 }
 
 .homePageImg{
+  opacity: 0;
   margin: 0;
   width: 200px;
   height: 200px;
 }
 
+.homePageImg:hover{
+  opacity: 1;
+}
 
+.addButton{
+  text-align: center;
 
+}
 #movies img, #movie img, #moviess img{
   width: 100%;
+}
+.homePage{
+  text-align: center;
+}
+
+
+@media(max-width: 600px) {
+  #homePageWrapper{
+    text-align: left;
+    margin: auto 30px;
+  }
+  h1{
+    text-align: left;
+    font-size: 20px;
+    margin: auto 60px;
+  }
+  .gif{
+    display: block;
+    margin: auto 60px;
+
+  }
+  h4{
+    display: none;
+  }
+  .addButton{
+    left: 500px ;
+    margin: auto 150px;
+  }
 }
 
 @media(min-width: 700px) {
@@ -87,12 +119,9 @@ label{
   #movies .col-md-3 .well{
     height: 400px;
   }
+
   #movies .col-md-3 img{
     height: 240px;
   }
-}
-
-
-@media (max-width: 200px) {
 
 }
