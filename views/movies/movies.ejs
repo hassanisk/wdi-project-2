@@ -5,7 +5,7 @@
   <% movies.forEach(movie => { %>
     <div>
     <a href="/movies/<%= movie._id %>" class="movieName fontSquare"><%= movie.name %></a>
-    <a href="/movies/<%= movie._id %>"><img class="showImg" src="<%= movie.image %>"></a></div>
+    <a  href="/movies/<%= movie._id %>"><img class="showImg" src="<%= movie.image %>"></a></div>
     <% }); %>
   </div> <br>
   <div class="addButton">
