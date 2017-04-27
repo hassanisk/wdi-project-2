@@ -91,7 +91,7 @@ function getMovie(){
     <div class="row">
     <div class="well">
     <h3 class="fontItalic">Plot</h3>
-    <span class="text-warning ">
+    <span class="text-warning fontSize">
     ${movie.Plot}
     </span>
     <hr>

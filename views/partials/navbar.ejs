@@ -12,13 +12,13 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 <ul class="nav navbar-nav navbar-right fontSquare">
   <% if (locals.isLoggedIn) { %>
-    <li><a href="/search">Search</a></li>
-    <li><a href="/movies/">MoviePedia</a></li>
-    <li><a href="/movies/new">Add Movie</a></li>
-    <li><a href="/logout">Logout</a></li>
+    <li class="navList"><a href="/search">Search</a></li>
+    <li class="navList"><a href="/movies/">MoviePedia</a></li>
+    <li class="navList"><a href="/movies/new">Add Movie</a></li>
+    <li class="navList"><a href="/logout">Logout</a></li>
     <% } else { %>
-      <li><a href="/login">Log In</a></li>
-      <li><a href="/register">Register</a></li>
+      <li class="navList"><a href="/login">Log In</a></li>
+      <li class="navList"><a href="/register">Register</a></li>
       <% } %>
     </ul>
   </ul>
