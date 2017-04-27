@@ -4,8 +4,12 @@
 <div class="center carousel">
   <% movies.forEach(movie => { %>
     <div>
-    <a href="/movies/<%= movie._id %>" class="movieName fontSquare"><%= movie.name %></a>
-    <a  href="/movies/<%= movie._id %>"><img class="showImg" src="<%= movie.image %>"></a></div>
+    <a href="/movies/<%= movie._id %>" class="movieName fontSquare movieText"><%= movie.name %></a>
+    <a  href="/movies/<%= movie._id %>"><img class="showImg" src="<%= movie.image %>"></a>
+    <span class="fontSquare text-warning movieText" >Genre: <%= movie.genre %></span>
+    <span class="fontSquare text-warning movieText">Title: <%= movie.year %></span>
+    </div>
+
     <% }); %>
   </div> <br>
   <div class="addButton">

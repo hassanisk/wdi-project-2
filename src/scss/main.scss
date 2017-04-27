@@ -8,11 +8,24 @@ body {
 
 .carousel {
   width: 90%;
-  margin: 0 0 0 100px;
+  margin: 0 50px 0 50px;
 }
 .movieName{
   font-size: 20px;
   text-decoration:  none;
+}
+.movieText{
+  background-color: black;
+}
+.HomePageTitle{
+  border-radius: 10px;
+  background-color:  black;
+}
+span{
+  font-size: 20px;
+}
+.blue{
+  color: #2a9fd6;
 }
 
 .btn{
@@ -68,7 +81,7 @@ height: 400px;
 }
 
 .showImg:hover{
-border-radius: 10px solid blue; 
+border-radius: 10px solid blue;
 }
 label{
   font-size: 20px;
@@ -96,7 +109,6 @@ label{
   display: inline-block;
   width: 1200px;
   margin: 0;
-  // background-color: red;
 }
 
 .gif{
@@ -125,6 +137,15 @@ label{
   text-align: center;
 }
 
+
+@media(max-width: 800px) {
+  h1 {
+    display: none;
+  }
+  body{
+    background-repeat: auto;
+  }
+}
 
 @media(max-width: 600px) {
   #homePageWrapper{

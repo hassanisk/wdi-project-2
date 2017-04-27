@@ -95,7 +95,7 @@ function getMovie(){
     ${movie.Plot}
     </span>
     <hr>
-    <a href="/" class="btn btn-default">Go Back To Search</a>
+    <a href="/" class="btn btn-default"><span aria-hidden="true">&larr;</span>Back</a>
     <a href="http://imdb.com/title/${movie.imdbID}" target="_blank" class="btn btn-primary">View IMDB</a>
     `;
     $('#movie').html(output);

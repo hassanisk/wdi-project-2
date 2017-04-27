@@ -7,7 +7,7 @@
       <div class="col-md-8"
       <ul class="list-group">
         <h2 class="fontItalic"><%= movie.name %></h2>
-<span><iframe width="100%" height="400" src="https://www.youtube.com/embed/<%= movie.youtubeid %>" frameborder="0" allowfullscreen></iframe></span>
+        <span><iframe width="100%" height="440" src="https://www.youtube.com/embed/<%= movie.youtubeid %>" frameborder="0" allowfullscreen></iframe></span>
       </ul>
     </div>
   </div>
@@ -18,7 +18,7 @@
       </span>
       <hr>
       <a href="/movies" class="btn btn-default"><span aria-hidden="true">&larr;</span>Back</a>
-    <a href="/movies/<%= movie.id %>/edit" class="btn btn-primary">Edit</a>
+      <a href="/movies/<%= movie.id %>/edit" class="btn btn-primary">Edit</a>
     </div>
   </div>
 </div>
