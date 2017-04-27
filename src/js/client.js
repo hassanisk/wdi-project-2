@@ -1,10 +1,5 @@
 $(document).ready(() => {
-  $('.multiple-items').slick({
-    infinite: true,
-    slidesToShow: 3,
-    slidesToScroll: 3
-
-  });
+  $('.single-item').slick();
   $('#searchForm').on('submit', (e) => {
     const searchText = $('#searchText').val();
     getMovies(searchText);
