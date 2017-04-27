@@ -16,10 +16,10 @@ function getMovies(searchText) {
     let output ='';
     $.each(movies, (index, movie) =>{
       output += `
-      <div class="col-md-3">
+      <div class="col-md-3 fontSquare">
       <div class="well text-center" >
-      <img src="${movie.Poster}">
-      <h5>${movie.Title}</h5>
+      <a onclick="movieSelected('${movie.imdbID}')" class="btn btn-primary" href="#"><img src="${movie.Poster}"></a>
+      <h5 class="fontSquare">${movie.Title}</h5>
       <a onclick="movieSelected('${movie.imdbID}')" class="btn btn-primary" href="#">Movie Details</a>
       </div>
       </div>
@@ -52,7 +52,7 @@ function getMovie(){
     </div>
     <div class="col-md-8"
     <ul class="list-group">
-    <h2>${movie.Title}</h2>
+    <h2 class="fontTitle fontItalic">${movie.Title}</h2>
     <li class="list-group-item"><strong>Genre: </strong><span class="text-warning">${movie.Genre}</span></li>
     <li class="list-group-item"><strong>Released: </strong><span class="text-warning">${movie.Released}</span></li>
     <li class="list-group-item"><strong>Rated: </strong><span class="text-warning">${movie.Rated}</span></li>
@@ -66,8 +66,8 @@ function getMovie(){
     </div>
     <div class="row">
     <div class="well">
-    <h3>Plot</h3>
-    <span class="text-warning">
+    <h3 class="fontTitle fontItalic">Plot</h3>
+    <span class="text-warning ">
     ${movie.Plot}
     </span>
     <hr>

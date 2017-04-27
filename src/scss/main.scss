@@ -2,19 +2,39 @@ body {
   font-family: sans-serif;
   background: black;
 }
-
+.btn{
+  font-size: 20px;
+}
 h1{
   text-align: center;
 }
 
+.fontSquare{
+  font-family: 'Electrolize', sans-serif;
+}
+.fontItalic{
+  font-family: 'Pacifico', cursive;
+
+}
+li{
+  font-size: 20px;
+}
 
 textarea {
   resize: vertical;
   max-height: 100px;
   min-height: 50px;
 }
+h3{
+  font-size: 20px;
+  font-weight: lighter;
+  text-align: center;
+  color: grey;
+  font-style: italic;
+}
 
 label{
+  font-size: 20px;
   color: #42b9f4;
 }
 .form-horizontal{
@@ -22,7 +42,9 @@ label{
   width: 200px;
   left: 50%;
 }
-
+.underline{
+  text-decoration: underline;
+}
 .form {
   margin: auto;
   width: 50%;
