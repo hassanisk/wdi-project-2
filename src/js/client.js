@@ -31,7 +31,6 @@ $(document).ready(() => {
   });
 });
 
-
 function getMovies(searchText) {
   $.get('http://www.omdbapi.com/?s='+searchText)
   .done((response) => {
@@ -68,7 +67,6 @@ function getMovie(){
   .then((response) => {
     console.log(response);
     let movie  = response;
-
     let output = `
     <div class="row">
     <div class="col-md-4">
@@ -84,7 +82,6 @@ function getMovie(){
     <li class="list-group-item"><strong>Director: </strong><span class="text-warning">${movie.Director}</span></li>
     <li class="list-group-item"><strong>Writer: </strong><span class="text-warning">${movie.Writer}</span></li>
     <li class="list-group-item"><strong>Actors: </strong><span class="text-warning">${movie.Actors}</span></li>
-
     </ul>
     </div>
     </div>
@@ -100,13 +97,7 @@ function getMovie(){
     `;
     $('#movie').html(output);
   })
-
   .catch((err) => {
     console.log(err);
   });
 }
-$('#logo').hover(function(){
-  $(this).wiggle('start');
-},function(){
-  $(this).wiggle('stop');
-});

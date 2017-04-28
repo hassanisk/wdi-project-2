@@ -9,30 +9,30 @@ const browserSync = require('browser-sync').create();
 
 gulp.task('js', () => {
   return gulp.src('src/js/**/*.js')
-    .pipe(plumber())
-    .pipe(babel({ presets: ['es2015'] }))
-    .pipe(uglify())
-    .pipe(gulp.dest('public/js'));
+  .pipe(plumber())
+  .pipe(babel({ presets: ['es2015'] }))
+  .pipe(uglify())
+  .pipe(gulp.dest('public/js'));
 });
 
 gulp.task('sass', () => {
   return gulp.src('src/scss/**/*.scss')
-    .pipe(plumber())
-    .pipe(sass().on('error', sass.logError))
-    .pipe(cleanCSS({ compatibility: 'ie8' }))
-    .pipe(gulp.dest('public/css'));
+  .pipe(plumber())
+  .pipe(sass().on('error', sass.logError))
+  .pipe(cleanCSS({ compatibility: 'ie8' }))
+  .pipe(gulp.dest('public/css'));
 });
 
 gulp.task('fonts', () => {
   return gulp.src('src/fonts/**/*.{eot,svg,ttf,woff,woff2}')
-    .pipe(gulp.dest('public/fonts'))
-    .pipe(browserSync.stream());
+  .pipe(gulp.dest('public/fonts'))
+  .pipe(browserSync.stream());
 });
 
 gulp.task('images', () => {
   return gulp.src('src/images/**/*.{png,jpg,jpeg,gif,ico}')
-    .pipe(gulp.dest('public/images'))
-    .pipe(browserSync.stream());
+  .pipe(gulp.dest('public/images'))
+  .pipe(browserSync.stream());
 });
 
 gulp.task('serve', ['js', 'sass'], () => {
@@ -44,7 +44,6 @@ gulp.task('serve', ['js', 'sass'], () => {
     notify: false,
     open: false
   });
-
   return nodemon({ script: 'index.js'})
   .on('start', () => browserSync.reload());
 });

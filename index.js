@@ -26,17 +26,17 @@ app.use(methodOverride((req) => {
     return method;
   }
 }));
+
 app.use(session({
   secret: process.env.SESSION_SECRET || 'ssh it\'s a secret',
   resave: false,
   saveUninitialized: false
 }));
-app.use(flash());
 
+app.use(flash());
 
 app.use((req, res, next) => {
   if (!req.session.userId) return next();
-
   User
   .findById(req.session.userId)
   .exec()
@@ -53,9 +53,7 @@ app.use((req, res, next) => {
   });
 });
 
-
 app.use(morgan('dev'));
 app.use(expressLayouts);
 app.use(router);
-
 app.listen(env.port, () => console.log(`Server up and running on port: ${env.port}.`));

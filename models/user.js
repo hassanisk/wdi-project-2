@@ -15,10 +15,10 @@ userSchema.pre('save', function hashPassword(next) {
 });
 
 userSchema
-  .virtual('passwordConfirmation')
-  .set(function setPasswordConfirmation(passwordConfirmation) {
-    this._passwordConfirmation = passwordConfirmation;
-  });
+.virtual('passwordConfirmation')
+.set(function setPasswordConfirmation(passwordConfirmation) {
+  this._passwordConfirmation = passwordConfirmation;
+});
 
 userSchema.pre('validate', function checkPassword(next) {
   if (this.isModified('password') && this._passwordConfirmation !== this.password) this.invalidate('passwordConfirmation', 'does not match');

@@ -1,7 +1,7 @@
-const mongoose = require('mongoose');
+const mongoose   = require('mongoose');
 mongoose.Promise = require('bluebird');
-const env = require('../config/env');
-const Movie = require('../models/movie');
+const env        = require('../config/env');
+const Movie      = require('../models/movie');
 
 mongoose.connect(env.db, () => {
   console.log('Connected');

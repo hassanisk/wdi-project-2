@@ -1,10 +1,9 @@
-const express = require('express');
-const router  = express.Router();
+const express       = require('express');
+const router        = express.Router();
 const statics       = require('../controllers/statics');
 const sessions      = require('../controllers/sessions');
 const registrations = require('../controllers/registrations');
-const movies = require('../controllers/movies');
-
+const movies        = require('../controllers/movies');
 
 function secureRoute(req, res, next) {
   if (!req.session.userId) {
@@ -13,9 +12,9 @@ function secureRoute(req, res, next) {
       res.redirect('/login');
     });
   }
-
   return next();
 }
+
 router.route('/')
 .get(statics.index);
 router.route('/movie')
@@ -37,7 +36,6 @@ router.route('/movies/:id')
 
 router.route('/movies/:id/edit')
 .get(secureRoute, movies.edit);
-
 
 router.route('/register')
 .get(registrations.new)

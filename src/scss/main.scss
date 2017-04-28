@@ -1,3 +1,7 @@
+html{
+  height: 1000px;
+}
+
 body {
   font-family: sans-serif;
   background: black;
@@ -5,64 +9,19 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
 }
-
-.carousel {
-  width: 90%;
-  margin: 0 50px 0 50px;
-}
-.movieName{
-  font-size: 20px;
-  text-decoration:  none;
-}
-.movieText{
-  background-color: black;
-}
-.HomePageTitle{
-  border-radius: 10px;
-  background-color:  black;
-}
 span{
   font-size: 20px;
 }
-.blue{
-  color: #2a9fd6;
-}
 
-.btn{
-  font-size: 20px;
-}
 h1{
   text-align: center;
-}
-#logo{
-  height :50px;
-  margin: -15px auto;
-}
-.logo{
-  font-size: 50px;
-}
-.fontSquare{
-  font-family: 'Electrolize', sans-serif;
-}
-.fontItalic{
-  font-family: 'Pacifico', cursive;
-
-}
-.navList{
-  font-size: 35px;
-}
-.list-group-item{
-  font-size: 20px;
-}
-.fontSize{
-  font-size: 20px;
-
 }
 textarea {
   resize: vertical;
   max-height: 100px;
   min-height: 50px;
 }
+
 h4{
   font-size: 20px;
   font-weight: lighter;
@@ -70,31 +29,87 @@ h4{
   color: grey;
   font-style: italic;
 }
+label{
+  font-size: 20px;
+  color: #42b9f4;
+}
+
+.carousel {
+  width: 90%;
+  margin: 0 50px 0 50px;
+}
+
+.movieName{
+  font-size: 20px;
+  text-decoration:  none;
+}
+
+.movieText{
+  background-color: black;
+}
+
+.HomePageTitle{
+  border-radius: 10px;
+  background-color:  black;
+}
+
+.blue{
+  color: #2a9fd6;
+}
+
+.btn{
+  font-size: 20px;
+}
+
+.logo{
+  font-size: 50px;
+}
+
+.fontSquare{
+  font-family: 'Electrolize', sans-serif;
+}
+
+.fontItalic{
+  font-family: 'Pacifico', cursive;
+}
+
+.navList{
+  font-size: 35px;
+}
+
+.list-group-item{
+  font-size: 20px;
+}
+
+.fontSize{
+  font-size: 20px;
+}
+
 .movieLink{
   text-align: right;
   text-decoration: none;
   font-size: 30px;
 }
+
 .showImg{
-width: 400px;
-height: 400px;
+  width: 400px;
+  height: 400px;
 }
 
 .showImg:hover{
-border-radius: 10px solid blue;
+  border-radius: 10px solid blue;
 }
-label{
-  font-size: 20px;
-  color: #42b9f4;
-}
+
 .form-horizontal{
   text-align: center;
   width: 200px;
   left: 50%;
 }
+
 .underline{
   text-decoration: underline;
 }
+
 .form {
   margin: auto;
   width: 50%;
@@ -102,13 +117,6 @@ label{
 
 .button{
   text-align: center;
-}
-
-#homePageWrapper{
-  text-align: center;
-  display: inline-block;
-  width: 1200px;
-  margin: 0;
 }
 
 .gif{
@@ -128,15 +136,25 @@ label{
 
 .addButton{
   text-align: center;
+}
 
-}
-#movies img, #movie img, #moviess img{
-  width: 100%;
-}
 .homePage{
   text-align: center;
 }
 
+#logo{
+  height :50px;
+  margin: -15px auto;
+}
+#homePageWrapper{
+  text-align: center;
+  display: inline-block;
+  width: 1200px;
+  margin: 0;
+}
+#movies img, #movie img, #moviess img{
+  width: 100%;
+}
 
 @media(max-width: 800px) {
   h1 {
@@ -160,7 +178,6 @@ label{
   .gif{
     display: block;
     margin: auto 60px;
-
   }
   h4{
     display: none;
@@ -172,13 +189,10 @@ label{
 }
 
 @media(min-width: 700px) {
-
   #movies .col-md-3 .well{
     height: 400px;
   }
-
   #movies .col-md-3 img{
     height: 240px;
   }
-
 }

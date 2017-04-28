@@ -20,6 +20,7 @@ function staticsSearch(req, res) {
     .exec()
     .then((users) => res.render('statics/search', { users }));
 }
+
 module.exports = {
   index: staticsIndex,
   movie: staticsmMovie,

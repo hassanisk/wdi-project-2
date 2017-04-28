@@ -4,13 +4,17 @@ Welcome to **"Popcorn and Chill"** online movie website. Second project for *WDI
 
 
 ##Introduction
-**"Popcorn and Chill"** is a one player shooting game based on the famous **Duck-Hunt** game. **Duck-Hunt** first released in Japan on April 21, 1984. Using JavaScript, I recreated this game for my first project after 3 weeks  at General Assembly (Web Development Immersive course). A hosted version of **Alien Attack** can be found [here] (https://secure-plateau-53161.herokuapp.com/) The code can be viewed [here] (https://github.com/hassanisk/wdi-project-1).
+**"Popcorn and Chill"** is an online movie website community which allows you to search movies and add recommended movies. This web application include authentications, I recreated this game for my first project after 3 weeks  at General Assembly (Web Development Immersive course). A hosted version of **"Popcorn and Chill"** can be found [here] (https://git.heroku.com/secure-atoll-92904.git) The code can be viewed [here] (https://github.com/hassanisk/wdi-project-2).
 
 ##How To PLAY
 ###Main
 
 <img width="476" alt="screen shot 2017-03-21 at 15 34 30" src="http://i.imgur.com/8DgzUWJ.jpg"> <br>
-This is the main interface when the game starts. The grid with the planets are is the main body where the game will actually happen. The red start button on top is used to start the game. The amount of ammo, score and restart option are located on the left side of the grid. 
+This is the home page. The navigation bar exists on any page to facilitate navigation. The *logo* on the left is reponsive and will take the user back to the home page once clicked. On the right, *log in* and *register* options. The title has "popcorn" as gif to ressemble the popping popcorn. Once the user hover around the page, images of famous movies characters will appear to add interactivity with the user.
+
+The user could either log in or register. Once logged in, the navbar changes to show new sections options. *Search*, *MoviePedia* and *Add Movie*. If clicked on *Search*, a new input option would appear. This 
+
+The grid with the planets are is the main body where the game will actually happen. The red start button on top is used to start the game. The amount of ammo, score and restart option are located on the left side of the grid. 
 ###Start
 
 <img width="476" alt="screen shot 2017-03-21 at 15 34 30" src="http://i.imgur.com/rXO3wCO.jpg"><br>
@@ -22,14 +26,21 @@ If player's score reaches 5 the speed of the ufo will increase, as well at score
 
 <img width="476" alt="screen shot 2017-03-21 at 15 34 30" src="http://i.imgur.com/DJwhbKa.jpg"><br>
 The game will end when the player ran out of ammo. Player could press on the hazard button to nuke the whole galaxy! A restart button could be used to reset.
+
 ##Further Work
-I would like to include more levels with a higher UFO speed and a timer for each level. At the moment there is no indication between the difference of the levels. A message should be added.
-Make it responsive since this version is not mobile friendly.
+I would like to include more features especially for the user. A user profile page includes profile photo, status, favourites with an option of adding other users to a friend list.
 
 ##Tools
 
-**Alien Attack** was built with HTML/CSS and Javascript and :<br>
-[FONT] (https://fonts.google.com/)
+**"Popcorn and Chill"** was built with HTML/CSS and JQuery 
+and :<br>
+- [Fonts] (https://fonts.google.com/)<br>
+- [Bootstrap.com] (https://Bootstrap.com/)<br>
+- [Bootwatch.com] (https://Bootswatch.com/) offers bootstrap themes<br>
+- [Slick.js] (https://Slick.js/) for the carousel<br>
+- [Gif Creater] (http://gifmaker.me/) to create the homepage gif.
+
+
 
 
 ##Credits
