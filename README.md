@@ -49,7 +49,7 @@ I would like to include more features especially for the users. A user profile p
 - SCSS <br>
 - JQuery <br>
 - Node.js<br>
-- Express.js<br>
+- Express<br>
 - [Google Fonts] (https://fonts.google.com/)<br>
 - Gulp<br>
 - OMBD API<br>
